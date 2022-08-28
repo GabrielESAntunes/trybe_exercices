@@ -2,9 +2,9 @@
 //(1)Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b, definidas no começo com os valores que serão operados. Faça programas para:
 
 
-
 const a = 10;
 const b = 15;
+
 
 let operacao = "subtração"
 
@@ -51,21 +51,21 @@ if (n3 >= n4 && n3 >= n5) {
     console.log(n4);
 } else if (n5 >= n4 && n5 >= n3) {
     console.log(n5);
-} else {
-
 }
+
+
 
 //(4)Faça um programa que, dado um valor recebido como parâmetro, retorne "positive" se esse valor for positivo, "negative" se for negativo, e caso não seja nem positivo e nem negativo retorne "zero".
 
-let param = "positive";
+let number = 20;
 
-if (param == "positive") {
-    console.log("positive")
-} else if (param == "negative") {
-    console.log("negative")
+if (number > 0) {
+  console.log('positive');
+} else if (number < 0) {
+  console.log('negative');
 } else {
-    console.log(0)
-}
+  console.log('zero');
+};
 
 //🚀(5)Faça um programa que defina três variáveis com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
 
@@ -87,9 +87,9 @@ if (cima + direita + esquerda == 180) {
 //Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
 //Exemplo: bishop (bispo) -> diagonals (diagonais)
 
-const peça = "torre";
+const peçaDeChadrez = "torre";
 
-switch (peçaDeChadrez.toLowerCase()) {
+switch (peçaDeChadrez.toLowerCase("torre")) {
     case "rei":
         console.log("Uma casa em qualquer direção");
         break;
@@ -100,7 +100,7 @@ switch (peçaDeChadrez.toLowerCase()) {
         console.log("Somente na diagonal")
         break;
     case "torre":
-        console.log("Várias casas para frente a para os lados");
+        console.log("Várias casas para frente e para os lados");
         break;
     case "cavalo":
         console.log("Se move formando um 'L'");
@@ -111,7 +111,7 @@ switch (peçaDeChadrez.toLowerCase()) {
     default:
         console.log("Peça inválida");
         break;
-}:
+};
 
 
 //(7)Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
@@ -127,33 +127,33 @@ switch (peçaDeChadrez.toLowerCase()) {
 const grade = 76;
 
 if (grade < 0 || grade > 100) {
-  console.log("Erro, nota incorreta!");
+    console.log("Erro, nota incorreta!");
 } else if (grade >= 90) {
-  console.log("A");
+    console.log("A");
 } else if (grade >= 80) {
-  console.log("B");
+    console.log("B");
 } else if (grade >= 70) {
-  console.log("C");
+    console.log("C");
 } else if (grade >= 60) {
-  console.log("D");
+    console.log("D");
 } else if (grade >= 50) {
-  console.log("E");
+    console.log("E");
 } else {
-  console.log("F");
+    console.log("F");
 }
 
 //🚀(8)Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false.
 //Bonus: use somente um if.
 
 
-const a = 1;
-const b = 3;
-const c = 5;
+const A = 1;
+const B = 3;
+const C = 5;
 
 let isEven = false;
 
-if ((a % 2 === 0 || b % 2 === 0 || c % 2 === 0)) {
-  isEven = true;
+if ((A % 2 === 0 || B % 2 === 0 || C % 2 === 0)) {
+    isEven = true;
 };
 console.log(isEven);
 
@@ -161,14 +161,14 @@ console.log(isEven);
 //Bonus: use somente um if.
 
 
-const a = 1;
-const b = 3;
-const c = 5;
+const a2 = 1;
+const b2 = 3;
+const c2 = 5;
 
 let isOdd = false;
 
-if ((a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0)) {
-  isOdd = true;
+if ((a2 % 2 !== 0 || b2 % 2 !== 0 || c2 % 2 !== 0)) {
+    isOdd = true;
 };
 console.log(isOdd);
 
@@ -184,11 +184,11 @@ const costOfProduct = 1;
 const saleValue = 3;
 
 if (costOfProduct >= 0 && saleValue >= 0) {
-  const totalCostOfProduct = costOfProduct * 1.2;
-  const totalProfit = (saleValue - totalCostOfProduct) * 1000;
-  console.log(totalProfit);
+    const totalCostOfProduct = costOfProduct * 1.2;
+    const totalProfit = (saleValue - totalCostOfProduct) * 1000;
+    console.log(totalProfit);
 } else {
-  console.log("Error, os valores não podem ser negativos");
+    console.log("Error, os valores não podem ser negativos");
 };
 
 //(11)Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
@@ -212,27 +212,38 @@ let aliquotIR;
 const grossSalary = 2000.00;
 
 if (grossSalary <= 1556.94) {
-  aliquotINSS = grossSalary * 0.08;
+    aliquotINSS = grossSalary * 0.08;
 } else if (grossSalary <= 2594.92) {
-  aliquotINSS = grossSalary * 0.09;
+    aliquotINSS = grossSalary * 0.09;
 } else if (grossSalary <= 5189.82) {
-  aliquotINSS = grossSalary * 0.11;
+    aliquotINSS = grossSalary * 0.11;
 } else {
-  aliquotINSS = 570.88;
+    aliquotINSS = 570.88;
 }
 
 const baseSalary = grossSalary - aliquotINSS;
 
 if (baseSalary <= 1903.98) {
-  aliquotIR = 0;
+    aliquotIR = 0;
 } else if (baseSalary <= 2826.65) {
-  aliquotIR = (baseSalary * 0.075) - 142.80;
+    aliquotIR = (baseSalary * 0.075) - 142.80;
 } else if (baseSalary <= 3751.05) {
-  aliquotIR = (baseSalary * 0.15) - 354.80;
+    aliquotIR = (baseSalary * 0.15) - 354.80;
 } else if (baseSalary <= 4664.68) {
-  aliquotIR = (baseSalary * 0.225) - 636.13;
+    aliquotIR = (baseSalary * 0.225) - 636.13;
 } else {
-  aliquotIR = (baseSalary * 0.275) - 869.36;
+    aliquotIR = (baseSalary * 0.275) - 869.36;
 };
 
 console.log("Salário: " + (baseSalary - aliquotIR));
+
+
+
+
+const n = 9 ;
+
+let resultado = 100;
+for (let index = 0; index <= n; index += 1) {
+  resultado -= index;
+};
+console.log(resultado);
