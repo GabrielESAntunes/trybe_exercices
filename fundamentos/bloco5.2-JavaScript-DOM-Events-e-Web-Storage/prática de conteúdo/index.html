@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="paiDoPai">
+        <section id="pai">
+          <section id="primeiroFilho"></section>
+          <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho"></section>
+          <section id="quartoEUltimoFilho"></section>
+        </section>
+      </main>
+
+ <script>
+let chalenge2 = (document.getElementById('elementoOndeVoceEsta').parentNode);
+console.log(chalenge2)
+
+let chalenge3 = (document.getElementById('primeiroFilhoDoFilho'));
+chalenge3.innerText = "primeiro neto"
+
+let chalenge4 = (document.getElementById('pai').firstElementChild);
+console.log(chalenge4)
+
+let chalenge5 = (document.getElementById('elementoOndeVoceEsta').previousElementSibling);
+console.log(chalenge5)
+
+let chalenge6 = (document.getElementById('elementoOndeVoceEsta').nextSibling);
+console.log(chalenge6)
+
+let chalenge7 = (document.getElementById('elementoOndeVoceEsta').nextElementSibling);
+console.log(chalenge7)
+
+let chalenge8 = (document.getElementById('pai').lastElementChild.previousElementSibling)
+console.log(chalenge8)
+</script> 
+<script src="pc-parte2.js"></script>
+    </body>
+</html>
