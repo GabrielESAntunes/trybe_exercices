@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <header>
+        <h2 id="page-title">Título</h2>
+        <p id="paragraph" class="parag">Dê uma cor para este parágrafo!</p>
+        <h4 id="subtitle">Subtítulo</h4>
+        <p id="second-paragraph" class="parag">Segundo parágrafo!</p>
+    </header>
+    <script>
+        const paragraph = document.getElementById("paragraph");
+        paragraph.style.color = "red";
+        let title = document.getElementById("page-title");
+        title.innerText = 'O lobo de wall Street'
+        const paragraph2 = document.getElementById("second-paragraph");
+        paragraph2.innerText = "por Leonardo DiCaprio"
+        let subtitle = document.getElementById ('subtitle');
+        subtitle.innerText = "Estrelado :"
+        let paragraphStyle = document.getElementsByClassName('parag');
+        paragraphStyle[0].style.color = "green"
+        let titleStyle = document.getElementsByTagName("h2");
+        titleStyle[0].style.color = "red"
+
+    </script>
+</body>
+
+</html>
